@@ -1,0 +1,50 @@
+.ProductDetails_area{
+    margin: 100px 0 40px 0;
+}
+.ProductDetails_box_text h2{
+    margin: 30px 0;
+}
+.ProductDetails_Specifications{
+    display: flex;
+    justify-content: space-between;
+}
+.ProductDetails_Specifications p{
+    color: rgb(0 8 20 / 85%)
+}
+.ProductDetails_Specifications span{
+    color: #000814;
+}
+.Order_now_box{
+    padding: 30px;
+    border: 2px solid #FFC300;
+    border-radius: 5px;
+    position: sticky;
+    top: 20px;
+    margin-bottom: 60px;
+}
+.Order_now_box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.ProductDetails_description{
+    margin-bottom: 40px;
+}
+.Order_now_box form input{
+    border-radius: 0;
+    padding: 10px;
+    background-color: #000814;
+    border: 2px solid #FFC300;
+    transition: .3s;
+    color: #fff;
+}
+.Order_now_box form input:focus{
+    border-color: #FFC300;
+    outline: 0;
+    box-shadow: 0 0 10px 1px #FFC300;
+    background-color: #000814;
+    color: #fff;
+}
+.Order_now_box form textarea{
+    min-height: 100px;
+}

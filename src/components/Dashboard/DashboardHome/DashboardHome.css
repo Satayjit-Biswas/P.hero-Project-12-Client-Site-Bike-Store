@@ -1,0 +1,13 @@
+.DashboardHome_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.DashboardHome_area_text{
+border-radius: 5px;
+background: #ffffff;
+box-shadow:  4px 10px 23px #cacaca;
+padding: 10% 15%;
+}

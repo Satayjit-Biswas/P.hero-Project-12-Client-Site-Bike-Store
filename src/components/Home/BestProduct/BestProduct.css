@@ -1,0 +1,58 @@
+.BestProduct_area{
+    background-image: url(../../../assets/bestProduct.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.BestProduct_area_overly{
+    background-color: #000814b9;
+}
+.BestProduct_box{
+    height: 100vh;
+}
+.BestProduct_text{
+    margin-bottom: 30px;
+}
+.BestProduct_area h4{
+    font-size: 35px;
+    font-weight: 600;
+}
+.BestProduct_area h2{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+}
+.BestProduct_area p{
+    color: #fff ;
+}
+.BestProduct_btn_custom {
+    background-color: #ffffff00;
+    padding: 12px 20px 14px 20px;
+    line-height: 24px;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: 2px solid #FFD60A;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+    cursor: pointer;
+}
+.BestProduct_btn_custom:hover{
+    border: 2px solid #FFD60A;
+    background-color: #FFD60A;
+    color: #000814;
+    box-shadow: 0 0 10px 0 #FFD60A;
+    transform: scale(1.05);
+}
+.BestProduct_img{
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.BestProduct_img img{
+    max-width: 180px;
+}

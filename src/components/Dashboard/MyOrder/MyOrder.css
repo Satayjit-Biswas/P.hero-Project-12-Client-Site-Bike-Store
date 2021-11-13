@@ -1,0 +1,50 @@
+/* .myorder_area{
+    padding: 10px;
+    border: 2px solid #000;
+} */
+.myorder_area h3{
+    color: #000814;
+}
+.myorder_area .order{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.myorder_area .order img{
+    width: 50px;
+}
+.myorder_area .order span{
+    color: red;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid red;
+    transition: .3s;
+    border-radius: 5px;
+}
+.myorder_area .order span:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid red;
+    background-color: red;
+}
+.order .pending{
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: rgb(255, 251, 0);
+}
+.order .Approve{
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: #FFC300;
+    color:#fff;
+}
+.order .dalibary{
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: #31af36;
+    color:#fff;
+}

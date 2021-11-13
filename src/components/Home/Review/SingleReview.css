@@ -1,0 +1,47 @@
+.Review_box{
+    margin: 20px 0;
+    padding: 30px 20px;
+    border: 2px solid #FFC300;
+    background-color: #000814;
+    min-height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Review_img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgb(255 195 0 / 26%);
+}
+.Review_name h3{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.Review_reting{
+    margin: 10px 0;
+}
+.Review_reting span{
+    color: #FFC300;
+    font-size: 18px;
+    margin: 0 1px;
+}
+.Review_text{
+    max-height: 80px;
+    overflow-y: auto;
+}
+.Review_text p{
+    margin: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Review_text::-webkit-scrollbar {
+    display: none;
+}
+  /* Hide scrollbar for IE, Edge and Firefox */
+.Review_text {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

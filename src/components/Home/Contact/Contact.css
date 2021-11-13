@@ -1,0 +1,22 @@
+.contact_form {
+    padding: 60px 30px;
+    border: 1px solid #FFC300;
+    margin: 80px 0;
+}
+
+.contact_form input,.contact_form textarea{
+    border-radius: 0;
+    padding: 10px ;
+    background-color: #000814;
+    border: 2px solid #FFC300;
+}
+.contact_form input:focus, .contact_form textarea:focus{
+    border-color: #FFC300;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(255 195 0 / 12%);
+    background-color: #000814;
+    color: #fff;
+}
+.contact_form textarea{
+    min-height: 130px;
+}

@@ -1,38 +1,171 @@
-.App {
+.btn_custom {
+  background-color: #FFC300;
+  padding: 8px 20px 10px 20px;
+  line-height: 24px;
+  border: none;
+  color: rgb(14, 14, 14);
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s;
+  cursor: pointer;
+}
+.btn_custom:hover{
+  background-color: #FFD60A;
+  color: #000814;
+  box-shadow: 0 0 10px 0 #FFD60A;
+  transform: scale(1.05);
+}
+
+h3{
+  font-size: 40px;
+  color: #ffffff;
+}
+h4{
+  font-size: 35px;
+  color: #FFC300;
+}
+p{
+  color: #90929d;
+  font-size: 18px;
+}
+.App .navbar-nav .active{
+  color: #FFC300;
+}
+.bg_color{
+  background-color: #000814;
+}
+.App .spinner-border{
+  color: #FFC300;
+    width: 69px;
+    height: 69px;
+}
+.App .form-control[readonly] {
+  background-color: #000814;
+  opacity: 1;
+  color: #fff;
+}
+.App input:-webkit-autofill,
+.App input:-webkit-autofill:hover, 
+.App input:-webkit-autofill:focus,
+.App textarea:-webkit-autofill,
+.App textarea:-webkit-autofill:hover,
+.App textarea:-webkit-autofill:focus,
+.App select:-webkit-autofill,
+.App select:-webkit-autofill:hover,
+.App select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 0px 1000px #000814 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1400px) { 
+	.container{
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+	.container{
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1199px) { 
+  /* home page date area  */
+  .App .slider_area_text h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991.98px) { 
+  .App .header_shape svg {
+    top: 104px;
+    left: 0;
+}
+.App .slider_box {
+  height: 75vh;
+}
+.App .SingleProduct_text {
+  padding: 10px;
+}
+.App .navbar-toggler {
+  background-color: #FFC300;
+  padding: 2px 8px;
+}
+.App .navbar-nav{
+  text-align: center
+}
+.App .header_login_area {
+  margin-left: 0px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.App li.nav-item {
+  margin-bottom: 20px;
+}
+.App .BestProduct_area h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+.App .BestProduct_area h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.App .BestProduct_img img {
+  max-width: 100px;
+}
+.App .Dashboard_menu {
+  flex-direction: row;
+  padding: 30px;
+}
+.App .Dashboard_menu_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 12px;
+}
+.App .Dashboard_user {
+  width: 100%;
+}
+}
+@media (max-width: 767.98px) { 
+  .App .top_nav {
+    display: none;
+}
+.App .header_shape svg {
+  top: 80px;
+  left: 0;
+}
+.App .header_img {
+  position: relative;
+  max-width: 100%;
+  top: 85px;
+}
+.App h3 {
+  font-size: 28px;
+}
+.App .BestProduct_text {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.App .Dashboard_menu {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.App .Dashboard_user{
+  font-size: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .Dashboard_user img{
+  width: 45px;
+  height: 45px;
+}
+.App .myorder_area .order {
+  flex-direction: column;
+  padding: 30px 0;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.App .myorder_area .order img {
+  width: 250px;
+}
 }
