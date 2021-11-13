@@ -6,12 +6,12 @@ const DashboardHome = () => {
     const [loading,setLoading] = useState(true);
     const {user} = useAuth();
     const [SingleServerUser,setSingleServerUser] = useState([]);
-    const {name,email,role} = SingleServerUser;
+    const {name,email} = SingleServerUser;
 
 
     //fetch  SingleServerUser
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user.email}`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => {setSingleServerUser(data)
                 setLoading(false);})

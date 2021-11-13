@@ -57,7 +57,7 @@ const useFirebase = () =>{
     // add to user in server 
     const UserServer = (name,email,method)=>{
         const adduser = {name:name,email:email,role:'member'};
-        fetch('http://localhost:5000/user', {
+        fetch('https://serene-bayou-47895.herokuapp.com/user', {
             method: method,
             headers: {
                 'content-type': 'application/json'

@@ -8,7 +8,7 @@ const Myorderdata = (props) => {
             <div className="title my-2"> {title} </div>
             <div className="orderPrice my-2">{price} tk</div>
             {
-                status=="pending" ? <div className="Approve my-2">
+                status==="pending" ? <div className="Approve my-2">
                 Pending
             </div> : <div className="dalibary my-2">
                 Dalibary

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,7 +35,7 @@ const AddProduct = () => {
             return;
         }
         else{
-            fetch('http://localhost:5000/product', {
+            fetch('https://serene-bayou-47895.herokuapp.com/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

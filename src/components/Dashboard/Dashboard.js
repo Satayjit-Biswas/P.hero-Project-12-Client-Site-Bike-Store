@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ProductDetails from '../Home/Product/ProductDetails/ProductDetails';
 import PageHeader from '../Share/PageHeader/PageHeader';
 import './Dashboard.css';
 import img from '../../assets/user_logo.png';
 import {
-    BrowserRouter as Router,
     Switch,
-    Route,
-    Link,
-    useParams,
     useRouteMatch,
     NavLink
 } from "react-router-dom";
@@ -33,7 +28,7 @@ const Dashboard = () => {
 
     //fetch  SingleServerUser
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user.email}`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setSingleServerUser(data))
     }, []);
@@ -51,7 +46,7 @@ const Dashboard = () => {
                                     }</div>
                                     <div className="mb-1">Role : {role}</div>
                                 </div>
-                                    {role=='member'?<div className='Dashboard_menu_box'>
+                                    {role === 'member'?<div className='Dashboard_menu_box'>
                                     <NavLink to={`${url}`}>Profile</NavLink>
                                     <NavLink to={`${url}/myorder`}>My Order</NavLink>
                                     <NavLink to={`${url}/pay`}>pay</NavLink>

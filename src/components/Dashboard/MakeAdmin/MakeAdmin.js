@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     
     //fetch  SingleServerUser
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user.email}`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setSingleServerUser(data))
     }, []);
@@ -24,7 +24,7 @@ const submitMakeAdmin =(e)=>{
     e.preventDefault();
     setloading(true);
     if(SingleServerUser.role === 'admin'){
-        const url = `http://localhost:5000/user`;
+        const url = `https://serene-bayou-47895.herokuapp.com/user`;
         fetch(url,{
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },

@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import useAuth from '../../../hooks/useAuth';
 import ManageAllOrderData from './ManageAllOrderData';
 
 const ManageAllOrder = () => {
-const {user}=useAuth();
 const [order,setorder] = useState([])
 const [loading,setloading] = useState(true)
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/order`)
+    fetch(`https://serene-bayou-47895.herokuapp.com/order`)
         .then(res => res.json())
         .then(data => {
             setorder(data)
@@ -21,7 +19,7 @@ useEffect(()=>{
 const manageorderDelete = id =>{
     const sure = window.confirm("Are You Sure Delete Your Order");
     if(sure){
-        const url = `http://localhost:5000/order/${id}`;
+        const url = `https://serene-bayou-47895.herokuapp.com/order/${id}`;
         fetch(url,{
             method: 'DELETE'
         })
@@ -40,8 +38,8 @@ const stateUpdate =(id)=>{
     const changeState = order.find(order=>order._id === id);
     const {status}=changeState;
 
-    if(status == 'pending'){
-        const url = `http://localhost:5000/order/${id}`;
+    if(status === 'pending'){
+        const url = `https://serene-bayou-47895.herokuapp.com/order/${id}`;
         fetch(url,{
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
@@ -56,7 +54,7 @@ const stateUpdate =(id)=>{
         })
     }
     else{
-        const url = `http://localhost:5000/order/${id}`;
+        const url = `https://serene-bayou-47895.herokuapp.com/order/${id}`;
         fetch(url,{
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },

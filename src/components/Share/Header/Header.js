@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
 import TopHeader from './TopHeader';
-import userlogo from '../../../assets/user_logo.png';
 import './Header.css'
 import useAuth from '../../../hooks/useAuth';
 

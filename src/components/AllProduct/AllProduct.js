@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import HomeProduct from '../Home/Product/HomeProduct/HomeProduct';
 import SingleProduct from '../Home/Product/SingleProduct/SingleProduct';
 import PageHeader from '../Share/PageHeader/PageHeader';
 import './AllProduct.css'
@@ -7,7 +6,7 @@ import './AllProduct.css'
 const AllProduct = () => {
     const [ allProduct , setallProduct]= useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://serene-bayou-47895.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setallProduct(data))
     },[]);

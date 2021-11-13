@@ -10,7 +10,7 @@ const SubmitReview = () => {
 
     //fetch  SingleServerUser
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user.email}`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setSingleServerUser(data))
     }, []);
@@ -38,7 +38,7 @@ const SubmitReview = () => {
             toast.error('Under 5 star');
         }
         else {
-            fetch('http://localhost:5000/review', {
+            fetch('https://serene-bayou-47895.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

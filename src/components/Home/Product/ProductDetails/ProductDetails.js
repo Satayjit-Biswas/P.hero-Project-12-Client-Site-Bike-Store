@@ -12,7 +12,7 @@ const ProductDetails = () => {
     const [GetProduct,setGetProduct] =useState({});
     const {id} = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setGetProduct(data))
     },[])
@@ -36,7 +36,7 @@ const ProductDetails = () => {
     const submitOrder = (e) => {
         const addorder = {...order,orderproductid:_id,name:user.displayName,email:user.email, status:'pending',title:title,img:img,price:price};
         e.preventDefault()
-            fetch('http://localhost:5000/order', {
+            fetch('https://serene-bayou-47895.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

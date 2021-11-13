@@ -11,7 +11,7 @@ const MyOrder = () => {
     const [loading,setloading] = useState(true)
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/order`)
+        fetch(`https://serene-bayou-47895.herokuapp.com/order`)
             .then(res => res.json())
             .then(data => {
                 setMyorder(data)
@@ -23,7 +23,7 @@ const MyOrder = () => {
     const manageorderDelete = id =>{
         const sure = window.confirm("Are You Sure Delete Your Order");
         if(sure){
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://serene-bayou-47895.herokuapp.com/order/${id}`;
             fetch(url,{
                 method: 'DELETE'
             })
