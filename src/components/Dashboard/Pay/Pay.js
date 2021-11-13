@@ -1,9 +1,10 @@
 import React from 'react';
+import img from '../../../assets/working.png'
 
 const Pay = () => {
     return (
         <div>
-            <h2>pay</h2>
+            <img src={img} className='img-fluid'></img>
         </div>
     );
 };

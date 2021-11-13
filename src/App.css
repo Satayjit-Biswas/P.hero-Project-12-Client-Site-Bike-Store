@@ -86,6 +86,7 @@ p{
 }
 .App .SingleProduct_text {
   padding: 10px;
+  margin: 25px 0;
 }
 .App .navbar-toggler {
   background-color: #FFC300;
@@ -167,5 +168,9 @@ p{
 }
 .App .myorder_area .order img {
   width: 250px;
+}
+.App .register_form, .App .login_form {
+  width: 100%;
+
 }
 }
