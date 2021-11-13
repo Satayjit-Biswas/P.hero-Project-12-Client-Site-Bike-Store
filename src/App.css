@@ -148,6 +148,9 @@ p{
 .App .BestProduct_text {
   text-align: center;
 }
+.App .PageHeader {
+  height: 45vh;
+} 
 .App .Dashboard_menu {
   flex-direction: column;
   padding: 10px;
@@ -173,4 +176,9 @@ p{
   width: 100%;
 
 }
+}
+@media (max-width: 560.98px) { 
+  .App .PageHeader {
+    height: 35vh;
+  }
 }
