@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import useAuth from '../../../hooks/useAuth';
 import ManageProductData from './ManageProductData';
 
 const ManageProduct = () => {
-    const {user}=useAuth();
     const [Allproduct,setAllproduct] = useState([]);
     const [loading,setloading] = useState(true);
 
@@ -43,9 +41,9 @@ const ManageProduct = () => {
                     <div className="text-center my-5">
                         <h3>All Product ( { Allproduct.length } )</h3>
                         {
-                            loading?<div class="d-flex justify-content-center">
-                            <div class="spinner-border" role="status">
-                                <span class="visually-hidden">Loading...</span>
+                            loading?<div className="d-flex justify-content-center">
+                            <div className="spinner-border" role="status">
+                                <span className="visually-hidden">Loading...</span>
                             </div>
                         </div> 
                         :

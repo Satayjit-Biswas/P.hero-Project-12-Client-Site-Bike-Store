@@ -15,7 +15,7 @@ const ProductDetails = () => {
         fetch(`https://serene-bayou-47895.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setGetProduct(data))
-    },[])
+    },[id])
     const {_id,title,img,engine,weight,power,price,description} = GetProduct;
     // add order 
     const [order,setData] = useState({

@@ -15,7 +15,7 @@ const MakeAdmin = () => {
         fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setSingleServerUser(data))
-    }, []);
+    }, [user.email]);
     
 
     

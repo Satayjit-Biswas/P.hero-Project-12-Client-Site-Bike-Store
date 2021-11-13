@@ -21,7 +21,6 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute';
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
     const {user} = useAuth();
-    console.log(user)
     const [SingleServerUser,setSingleServerUser] = useState([]);
     const {role} = SingleServerUser;
 
@@ -31,7 +30,7 @@ const Dashboard = () => {
         fetch(`https://serene-bayou-47895.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setSingleServerUser(data))
-    }, []);
+    }, [user.email]);
     return (
         <div>
             <PageHeader text="Dashboard"></PageHeader>

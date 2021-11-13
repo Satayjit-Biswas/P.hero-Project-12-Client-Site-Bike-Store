@@ -15,7 +15,7 @@ const BestProduct = () => {
                                 <h4>Custom YZR700</h4>
                                 <h2>CAFE RACER</h2>
                                 <p>Yamaha has a rich heritage of building the most sought after supersport motorcycles designed to deliver the pinnacle of performance on and off the track. </p>
-                                <a href="#" className='BestProduct_btn_custom'>All Bikes</a>
+                                <a href="/" className='BestProduct_btn_custom'>All Bikes</a>
                             </div>
                         </div>
                         <div className="col-md-7">

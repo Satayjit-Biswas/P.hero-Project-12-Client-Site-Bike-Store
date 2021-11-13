@@ -77,9 +77,9 @@ return (
                 <div className="text-center my-5">
                     <h3>All Orders ( { order.length } )</h3>
                     {
-                        loading?<div class="d-flex justify-content-center">
-                            <div class="spinner-border" role="status">
-                                <span class="visually-hidden">Loading...</span>
+                        loading?<div className="d-flex justify-content-center">
+                            <div className="spinner-border" role="status">
+                                <span className="visually-hidden">Loading...</span>
                             </div>
                         </div> 
                         :

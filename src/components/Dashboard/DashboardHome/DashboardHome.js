@@ -15,14 +15,14 @@ const DashboardHome = () => {
             .then(res => res.json())
             .then(data => {setSingleServerUser(data)
                 setLoading(false);})
-    }, []);
+    }, [user.email]);
     return (
         <div className='DashboardHome_area'>
         {
             loading?
-                    <div class="d-flex justify-content-center">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                    <div className="d-flex justify-content-center">
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
                         </div>
                     </div> 
                     :<div className="DashboardHome_area_text">
