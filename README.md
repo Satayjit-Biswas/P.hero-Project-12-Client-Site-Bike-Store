@@ -1,6 +1,6 @@
 # This is Bike Store website...
-
-This project is [live](https://github.com/facebook/create-react-app).
+# BIKE-STORE
+This project is [live](https://bike-store-a5d20.web.app/).
 
 ## Project using
 * Bootstrap css 5.x
@@ -10,6 +10,3 @@ This project is [live](https://github.com/facebook/create-react-app).
 * Firebase
 * Mongodb
 
-# you can buy bike ...
-# you can Create user Account ...
-# Create Admin Panel ...
